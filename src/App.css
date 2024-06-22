@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #006769;
+  color: #fff;
+  height: auto;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  background: lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.active {
+  background: lightskyblue;
+  color: #000;
+}
+
+.icon,
+.link_text {
+  font-size: 20px;
+}
+
+/*Card*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+/*End Card*/
+
+
+/*File Dashboard.jsx*/
+.main-container {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chart-container {
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+
+  /* adjust width for larger screens */
+}
+
+/*File About.jsx*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /* เพื่อให้ทั้งสองส่วนมีความสูงเท่ากัน */
+}
+
+.pie-chart,
+.table-container {
+  width: 48%;
+  /* แบ่งครึ่งให้แต่ละส่วนกว้าง 48% */
+  margin: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.pie-chart {
+  height: 400px;
+  /* กำหนดความสูงให้แน่นอน */
+  margin-right: 1px;
+}
+
+.table-container {
+  height: 400px;
+  /* กำหนดความสูงให้แน่นอน */
+}
+
+
+
+
+/*File analytics.jsx*/
+.dataTable,
+.lineChart {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+  background: white;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: 650px;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.main-cards {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15px;
+}
+
+.Card {
+  position: relative; /* Instead of absolute */
+  z-index: 2; /* Add this */
+  min-width: 360px;
+  height: 175px;
+  background-color: #23aa6d!important;
+  color: #ffffff!important;
+  margin: 5px;
+}
+
+
+.Charts {
+  width: 97%;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 1310px;
+}
+
+
+
+/* Media queries for responsive design */
+
+@media (max-width: 1600px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for medium screens */
+  }
+
+  .pie-chart {
+    height: 800px;
+    width: 100%;
+  }
+
+  .table-container {
+    height: 800px;
+    width: 400px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .pie-chart {
+    height: 700px;
+    width: 100%;
+  }
+
+  .table-container {
+    height: 700px;
+    width: 400px;
+  }
+
+  .chart-container {
+    width: 100%;
+    /* adjust width for medium screens */
+  }
+
+  .second-container {
+    width: 100%;
+  } 
+  .Card{
+    min-width: 300px;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for medium screens */
+  }
+
+  .pie-chart {
+    width: 130%;
+    height: 700px;
+  }
+
+  .table-container {
+    width: 40%;
+    height: 700px;
+  }
+
+  .main-container {
+    width: 97%;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+
+ 
+}
+
+@media (max-width: 1080px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for medium screens */
+  }
+
+  .pie-chart {
+    width: 150%;
+    height: 1275px;
+  }
+
+  .table-container {
+    width: 40%;
+    height: 1275px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+  .Card{
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for small screens */
+  }
+
+  .pie-chart {
+    width: 120%;
+    height: 1100px;
+  }
+
+  .table-container {
+    width: 40%;
+    height: 1100px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+  .Card{
+    min-width: 230px;
+    
+  }
+  
+}
+
+
+@media (max-width: 900px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for small screens */
+  }
+
+  .pie-chart {
+    width: 120%;
+    height: 1150px;
+  }
+
+  .table-container {
+    width: 30%;
+    height: 1150px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+
+  .Card{
+    min-width: 470px;
+    display: flex;
+    flex-direction: column; /* Add this */
+  }
+
+  .Charts{
+    width: 95%;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for small screens */
+  }
+
+  .pie-chart {
+    width: 120%;
+    height: 750px;
+  }
+
+  .table-container {
+    width: 30%;
+    height: 750px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+
+  
+
+}
+
+
+
+@media (max-width: 640px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for very small screens */
+  }
+
+  .charts {
+    flex-direction: column;
+  }
+
+  .pie-chart {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .table-container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .data-table {
+    font-size: 0.8rem;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .chart-container {
+    width: 100%;
+    /* adjust width for very small screens */
+  }
+
+  .pie-chart {
+    width: 130%;
+    height: 950px;
+    margin-right: 5px;
+  }
+
+  .table-container {
+    width: 100%;
+    height: 950px;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pie-chart {
+    width: 120%;
+    height: 100px;
+  }
+
+  .table-container {
+    width: 15%;
+  }
+
+  .second-container {
+    width: 100%;
+  }
+}

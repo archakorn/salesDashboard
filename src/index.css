@@ -1,0 +1,62 @@
+/* index.css */
+:root {
+  font-family: 'Lato', sans-serif !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  color-scheme: light dark !important;
+  color: rgb(0, 0, 0) !important;
+  background-color: #eceaea !important;
+  font-synthesis: none !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+a {
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  text-decoration: inherit !important;
+}
+
+a:hover {
+  color: #000000 !important;
+}
+
+body {
+  margin: 0 !important;
+  display: flex !important;
+  place-items: center !important;
+  min-width: 320px !important;
+  min-height: 100vh !important;
+}
+
+h1 {
+  font-size: 3.2em !important;
+  line-height: 1.1 !important;
+}
+
+button {
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  padding: 0.6em 1.2em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  background-color: #1a1a1a !important;
+  cursor: pointer !important;
+  transition: border-color 0.25s !important;
+}
+
+button:hover {
+  border-color: #646cff !important;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color !important;
+}
+
+
+
+
+
